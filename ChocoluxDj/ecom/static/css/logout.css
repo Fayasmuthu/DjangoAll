@@ -1,0 +1,24 @@
+
+/* Add your CSS styles here */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add any other styles you need */
+

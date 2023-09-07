@@ -1,0 +1,288 @@
+
+
+@pip install django   
+_______________________________________________
+
+@@ django-admin startproject Ecommerce
+
+________________________________________________
+
+@@ python -m venv venv
+______________________________________________
+
+@@ venv\scripts\activate
+________________________________________________
+
+@@ cd ecommerce
+______________________________________________________
+
+@@ pip install django
+______________________________________________________
+
+@@ python manage.py startapp web
+_________________________________________________________
+
+python manage.py migrate
+________________________________________________________________
+
+@@ python manage.py runserver 0.0.0.0:8000
+_______________________________________________________________________________
+ 
+python manage.py createsuperuser
+================================
+
+@@ python manage.py createsuperuser
+
+Username (leave blank to use 'rcd'):      Adminf
+Email address:                            fayasmuthutest@gmail.com
+Password:    
+Password (again): 
+
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+__________________________________________________
+
+@@  python manage.py runserver 0.0.0.0:8000  @@
+__________________________________________________
+
+'DIRS': [BASE_DIR/'template'],
+
+_____________________________________
+
+
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
+
+STATIC_URL = 'static/'
+MEDIA_URL="/media/"
+MEDIA_ROOL=BASE_DIR/"media"
+STATIC_FILE_FOOT=BASE_DIR/"static"
+STATICFILES_DIRS =((BASE_DIR / "static"),)
+STATIC_ROOT=BASE_DIR/"assets"
+
+
+-----------------------------------------
+
+Ecom/ urls.py
+
+from django.contrib import admin
+from django.urls import path,include
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('web.urls'))
+
+]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+-------------------------------------------
+
+Web/ urls.py
+
+from django.contrib import admin
+from django.urls import path,include
+from . import views
+urlpatterns = [
+    path('',views.index,name="index")
+]
+
+-------------------------------------------
+
+Web/views.py
+
+from django.shortcuts import render
+
+# Create your views here.
+# Function
+
+def index(request):
+    return render(request,"web/index.html")
+
+-----------------------------------------------
+__________________________________________________________________
+_________________________________________________________________
+
+index.html
+==========
+		{% extends 'web/partials/base.html' %}		|
+		{% load static %}
+
+
+		{% block content  %}
+
+		<....................				|
+		.....................>
+
+		{% endblock  %}					|
+
+base.html
+==========
+	{% load static %}					|
+	<.................					|
+	.................>
+	
+								|
+			 {% block content %}			|
+                        					|
+                        {% endblock  %}				|
+
+	<..................
+	.................>					|
+
+________________________________________________________________
+__________________________________________________________________
+
+models.py
+========
+
+from django.db import models
+
+# Create your models here.
+
+class Product(models.Model):
+    name =models.CharField(max_length=100)
+    price =models.IntegerField()
+    image =models.ImageField(upload_to='media/product_image')
+
+admin.py
+========
+
+from django.contrib import admin
+from .models import Product
+
+# Register your models here.
+admin.site.register(Product)
+
+------------------------------
+python manage.py makemigrations
+
+python manage.py migrate
+
+pip install pillow
+
+________________________________
+
+from django.shortcuts import render
+from .models import Product
+
+# Create your views here.
+# Function
+
+def index(request):
+    context={
+        'prod' : Product.objects.all()
+    }
+    return render(request,"web/index.html",context)
+
+
+index.html
+==========
+
+{% for p in prod %}
+
+<img src="{{p.image.url}}" alt="new-arrivals images">
+
+<h4><a href="#">{{p.name}}</a></h4>
+<p class="arrival-product-price">{{p.price}}</p>
+
+{% endfor %}
+
+
+
+___________________________________________________________________________
+
+
+2 index.html Form
+============
+____________________________________________________________________________
+
+<body>
+
+
+    <form action="" @ method="POST">
+    @ {% csrf_token %}
+    <input type="text" placeholder="name" name="name_1">
+    <br>
+    <input type="age" placeholder="ago" name="age_1">
+    <br>
+    <input type="email" placeholder="email" name="email_1">
+    <br>
+    <input type="number" placeholder="phone" name="number_1">
+    <br>
+    <input type="submit" value="submit" >
+</form>
+</body>
+
+---------------------------------------------
+
+from django.shortcuts import render
+from .models import form_data
+
+# Create your views here.
+
+def index(request):
+    
+    if request.method=="POST":
+        name=request.POST.get("name_1")
+        age=request.POST.get("age_1")
+        email=request.POST.get("email_1")
+        phone=request.POST.get("number_1")
+
+        form_1=form_data(
+            name=name,
+            age=age,
+            email=email,
+            phone=phone
+        )
+        form_1.save()
+
+    return render(request,"web/index.html")
+----------------------------------------------
+from django.db import models
+
+# Create your models here.
+
+class form_data(models.Model):
+    name = models.CharField(max_length=50)
+    age = models.IntegerField()
+    email = models.EmailField()
+    phone = models.IntegerField()
+    
+    
+    def __str__(self):
+        return self.name
+    ____________________________________
+
+from django.contrib.auth import authenticate,login,logout
+
+def login1(request):
+    if request.method=="POST":
+        username=request.POST.get('username')
+        password=request.POST.get('password')
+
+        User=authenticate(username=username,password=password)
+        if User is not None:
+            login(request, User)
+            return redirect('index')
+
+    return render(request,"web/login.html")
+
+
+
+def signIn(request):
+
+def logout1(request):
+    logout(request)
+    return render(request,"web/login.html")
+
+------------------------------------------------
+urls
+
+ path('logout',views.logout1,name='logout')

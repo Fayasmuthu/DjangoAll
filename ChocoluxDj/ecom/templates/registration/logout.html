@@ -1,0 +1,23 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Logged out" %}{% endblock %}
+
+<!-- Include any additional CSS specific to this template if needed -->
+
+
+{% block content %}
+<p>{% trans "Successfully logged out" %}.</p>
+<a href="{% url 'web:index' %}">back to home</a>
+{% endblock %}
+
+{% comment %} 
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Logged out" %}{% endblock %}
+
+{% block content %}
+<p>{% trans "Successfully logged out" %}.</p>
+<a href="{% url 'web:index' %}">back to home</a>
+{% endblock %} {% endcomment %}

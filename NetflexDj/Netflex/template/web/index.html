@@ -1,0 +1,403 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css"  href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <section class="section1 "
+        style="background-image: url({% static 'image/IN-en-20230213-popsignuptwoweeks-perspective_alpha_website_large.jpg' %});">
+        <div class="overlay"></div>
+        <div class="col-lg-12">
+            <nav class="navbar">
+
+                <a class="navbar-brand " href="#">
+                    <img src="{% static 'image/Netflix_Logo_PMS.png' %}" alt="Bootstrap">
+                </a>
+
+
+
+
+                <div class="dropdown ">
+                    <button class="btn btn border border-outline-light dropdown-toggle me-3" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                        </svg>
+                        Eng
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Eng</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+
+                    </ul>
+                    <button class="btn btn-danger me-1">Sign In</button>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <section>
+            <div class="text-col mt-5">
+            <div class="text-un text-light abc">
+
+                 <span class="Un"> Unlimited movies, TV <br> shows and more.</span> 
+                <p class="Watch"> Watch anywhere. Cancel anytime.</p>
+                <p> Ready to watch? Enter your email to create or restart your
+                    membership.</p>
+            </div>
+        </div>
+
+    
+
+
+
+
+            </div>
+
+            <div class="box d-flex justify-content-center">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="email input1 border-light w-50" placeholder="Email Address"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-danger" type="button" id="button-addon2">Get Started></button>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </section>
+
+    <div class="hr"></div>
+    <section class="carousel-inner">
+        <div class="Enjoy" style="background-image: linear-gradient(#000000,#000000); ;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 p-5 text-light ">
+                        <H1>Enjoy on Your TV.</H1>
+                        <p>Watch on Tv smarts,Playstation,Xbox,<br>
+                            Chromecast, Apple TV,Blu-ray player and <br> more</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="{% static 'image/tv.png' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hr"></div>
+    <section class="carousel-inner">
+        <div class="Enjoy" style="background-image: linear-gradient(#000000,#000000); ;">
+            <div class="container">
+                <div class="row">
+                    <div class="p-2 col-lg-6 col-md-6 col-sm-12  ">
+                        <img src="{% static 'image/mobile-0819.jpg' %}" alt="" class="img-fluid"><br>
+
+                    </div>
+                    <div class=" p-5 col-lg-6 col-md-6 col-sm-12 text-light">
+                        <H1>Download your shows <br> to watch offline.</H1>
+                        <p>Save your fovourites easily and always have<br>
+                            Something to watch.<br> more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hr"></div>
+    <section class="carousel-inner">
+        <div class="Enjoy" style="background-image: linear-gradient(#000000,#000000); ;">
+            <div class="container">
+                <div class="row">
+                    <div class=" p-5 col-lg-6 col-md-6 col-sm-12 text-light ">
+                        <H1>Watch Everywhere.</H1>
+                        <p>Stream unlimited movice and TV shows on your<br>
+                            phone,tablet,laptop, and TV</p>
+                    </div>
+                    <div class="p-2 col-lg-6 col-md-6 col-sm-12">
+                        <img src="{% static 'image/device-pile-in.png' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hr"></div>
+    <section class="carousel-inner">
+        <div class="Enjoy" style="background-image: linear-gradient(#000000,#000000); ">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="p-2 col-lg-6 col-md-6 col-sm-12">
+                        <img src="{% static 'image/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png' %}"
+                            alt="" class="img-fluid">
+                    </div>
+
+                    <div class=" p-5 col-lg-6 col-md-6 col-sm-12 text-light">
+                        <H1>Created Profile for<br> Children</H1>
+                        <p>send Children on adventures with their<br>
+                            favourites characters in a space made just for<br>them-free with your membership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hr"></div>
+    <section class="carousel-inner">
+        <div class="Enjoy6" style="background-image: linear-gradient(#000000,#000000); ">
+            <div class="h1 text-center text-light py-4">
+                <p>Frequently Asked Questions</p>
+            </div>
+            <div class="container">
+                <div class="accordion " id="accordionExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Netflix?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                How much does Netflix cost?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                                aria-controls="collapseThree">
+                                Where can I watch?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfour">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                                aria-controls="collapsefour">
+                                How do I cancel?
+                            </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfive">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                                aria-controls="collapsefive">
+                                What can I watch on Netflix?
+                            </button>
+                        </h2>
+                        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingsix">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
+                                aria-controls="collapsesix">
+                                Is Netflix good for kids?
+                            </button>
+                        </h2>
+                        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+
+
+            <div class="box d-flex justify-content-center">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="email input1 border-light w-50" placeholder="Email Address"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-danger" type="button" id="button-addon2">Get Started></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="hr"></div>
+
+    <div class="black">
+        <div class="container">
+            <h5 class="pt-5">Qustion? Call 000-800-919-1694</h5>
+            <div class="row p-3">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <a href=""><p>FAQ</p></a>
+                    <a href=""><p>Investor Relation</p></a>
+                    <a href=""><p>Privacy</p></a>
+                    <a href=""><p>Speed test</p></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <a href=""><p>Help Centre</p></a>
+                    <a href=""><p>Jobs</p></a>
+                    <a href=""><p>Cookie Preferences</p></a>
+                    <a href=""><p>Legal Notices</p></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <a href=""><p>Account</p></a>
+                    <a href=""><p>Ways to Watch</p></a>
+                    <a href=""><p>Corporate Information</p></a>
+                    <a href=""><p>Only on Netflix</p></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                   <a href=""></a> <p>Media Centre</p></a>
+                    <a href=""><p>Terms of Use</p></a>
+                    <a href=""><p>Contact Us</p></a>
+                    <a href=""><p>Speed test</p></a>
+                </div>
+
+
+
+                <div class="dropdown">
+                    <button class="btn border border-outline-light dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                        </svg>
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    </ul>
+                    <p>Netflix India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

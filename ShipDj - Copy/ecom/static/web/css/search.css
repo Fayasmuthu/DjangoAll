@@ -1,0 +1,38 @@
+.boxform1{
+    height: 30px;
+    padding: 10px 5px;
+    display: flex;
+    cursor: pointer;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    align-items: center;
+
+}
+
+.boxform1:hover input{
+    width: 200px;
+}
+
+.boxform1 input{
+    width: 0;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background: transparent;
+}
+
+.boxform1 a .fa{
+    color: aqua;
+    font-size: 18px;
+}
+.top-bar .search1{
+ float: right;
+ margin-left: 50px;
+}
+@media (max-width:950px) {
+    .boxform1{
+        display: none;
+    }
+}
+

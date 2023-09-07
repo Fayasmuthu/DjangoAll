@@ -1,0 +1,90 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'web/css/login.css' %}">
+</head>
+
+<body>
+  {% comment %} --nav start-- {% endcomment %}
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Your Logo</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <div class="d-fl">
+        <div class="d">
+        <input type="checkbox">remember me
+      </div>
+      <div class="fl">
+        <a href="">Forget Password?</a>
+      </div>
+    </div>
+      <div class="submit">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" value="Submit">
+        </a>
+      </div>
+      <br>
+      <div class="submit">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" value="Login with Google">
+        </a>
+      </div>
+      <div class="Register d-fl">
+        <div class="do">
+      <p>Don't have an account</p>
+    </div>
+    <div class="fl">
+      <p><a href="">Register</a></p>
+    </div>
+    </div>
+    </form>
+  </div>
+
+
+</body>
+<script src="login.js"></script>
+
+</html>

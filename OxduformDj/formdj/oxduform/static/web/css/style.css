@@ -1,0 +1,104 @@
+.oximage{
+    /* background-image: linear-gradient (rgba(0,0,0,0.2)),(rgba(0,0,0,0.2)), url(image/bgi.webp); */
+   
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+    /* -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);; */
+}
+.layout{
+    background: linear-gradient(rgba(0, 0, 0, 0.2)),(rgba(0, 0, 0, 0.2));
+    position: absolute;
+    top: 85px;
+    left: 0;
+    height: 95vh;
+    width: 100%;
+    z-index: -2;
+    background: rgb(0,0,0);
+    background: linear-gradient(59deg, rgba(0,0,0,0.7287289915966386) 0%, rgba(0,0,0,0.7875525210084033) 56%);
+
+}
+/* .ab{
+    z-index:9999;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(13px);
+    filter: blur(0px);
+} */
+
+.BOX{
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 80px;
+}
+
+.texthead{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.input input{
+    width: 300px;
+    display: flex;
+    background-color: rgba(149, 207, 207, 0.233);
+    border: none;
+    padding: 5px;
+    
+}
+.input{
+    margin-left: 70px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+select{
+    width: 300px;
+    border: none;
+    background-color: rgba(149, 207, 207, 0.233);
+    padding: 5px;
+    color: darkgrey;
+}
+option{
+    color: black;
+}
+.sumbit input{
+    width: 250px;
+    margin-left: 90px;
+    background-color: green;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.A{
+    margin-top: 80px;
+    color: white;
+    padding-left: 100px;
+    filter: blur(0px);
+    z-index: 9999;
+    
+}
+.A h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+@media (max-width:320px) {
+    .ab{
+        
+        flex-direction: column;
+        margin: auto;
+    }
+    .oximage{
+    
+    }
+}

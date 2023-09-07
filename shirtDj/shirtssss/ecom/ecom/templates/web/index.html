@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="hero">
+            <nav>
+                <h1 class="models">Models</h1>
+                <ul>
+                    <li>About</li>
+                    <li>service</li>
+                    <li>contact</li>
+                    <li>Home</li>
+                    
+                </ul>
+                <h1><a href="">Models</a></h1>
+            </nav>
+        </div>
+
+    </header>
+    <section>
+        <table>
+            {% for p in prod %}
+            <tr>
+                <th>no</th>
+                <th>name</th>
+                <th>Image</th>
+                <th>price</th>
+                <th>qty</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>{{p.name}}</td>
+                <td><img src="{{p.image}}" alt="new"></td>
+                <td>{{p.price}}</td>
+                <td>5</td>
+            </tr>
+            {% endfor %}
+            <th></th>
+        </table>
+    </section>
+
+</body>
+
+</html>

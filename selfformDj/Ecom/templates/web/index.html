@@ -1,0 +1,270 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="line2"></section>
+  <section class="line3"></section>
+
+  <div class="backg">
+
+
+    <section>
+      <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="">password</label>
+            </div>
+            <div class="remember-forget">
+              <label for="">
+                <input type="checkbox"> remember me
+              </label>
+              <a href="#">Forget Password?</a>
+            </div>
+            <input type="submit" class="btn1" value="Login">
+            <!-- <button type="submit" class="btn">Login</button> -->
+            <input type="submit" class="btn1 mart" value="Login with Google">
+            <!-- <button type="submit" class="btn mart">Login with Google </button> -->
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box Register">
+          <h2>Register</h2>
+          <form action="">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required>
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="">password</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="">Confirm password</label>
+            </div>
+            <div class="remember-forget">
+              <label for="">
+                <input type="checkbox"> I agree to the term & conditions
+              </label>
+            </div>
+            <input type="submit" class="btn1" value="Register">
+            <!-- <button type="submit" class="btn">Register</button> -->
+            <div class="login-register">
+              <p>ALready have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <section class="line"></section>
+  <section class="#" id="home">
+
+  </section>
+  <section class="line1">
+ 
+  </section>
+
+
+
+  <!-- <section class="line"></section> -->
+
+  <section class="#" id="home">
+    <h1 class="star1">Our Star Furniture </h1><br>
+    <h3 class="star2"> Furniture Goods</h3>
+    <div class="box-container">
+      <div class="A">
+        <div class="hero">
+          <div class="pic">
+            <img src="{% static 'web/images/f1.jpg' %}" alt="new">
+          </div>
+          <h1 class="Name">Chair white</h1>
+          <p class="price">price</p>
+          <button>Booked</button>
+
+          <div class="overlay">
+            <h6>Chair best</h6>
+            <button> BOOK</button>
+          </div>
+        </div>
+      </div>
+      <!-- b -->
+
+      <!-- c -->
+
+      {% comment %} <div class="A">
+        <div class="hero">
+          <div class="pic">
+            <img src="pexels-hormel-2762247.jpg" alt="new">
+          </div>
+          <h1 class="Name">Chair white</h1>
+          <p class="price">price</p>
+          <button>Booked</button>
+
+          <div class="overlay">
+            <h6>Chair best</h6>
+            <button>BOOK</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- D -->
+
+      <div class="A">
+        <div class="hero">
+          <div class="pic">
+            <img src="pexels-hormel-2762247.jpg" alt="new">
+          </div>
+          <h1 class="Name">Chair white</h1>
+          <p class="price">price</p>
+          <button>Booked</button>
+
+          <div class="overlay">
+            <h6>Chair best</h6>
+            <button>BOOK</button>
+          </div>
+        </div>
+      </div> {% endcomment %}
+    </div>
+  </section>
+
+  <section class="fd">
+    <h2>Our Dishes</h2>
+    <h1>Popular Dishes</h1>
+    <div class="box1-container">
+      <div class="box">
+        <a href=""><ion-icon class="heart" name="heart"></ion-icon></a>
+        <a href=""><ion-icon class="eye" name="eye"></ion-icon></a>
+        <img src="images/f1.jpg" alt="">
+        <h3>food taste</h3>
+        <div class="star">
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+        </div>
+        <span>₹ 500.0</span><br>
+        <input type="submit" value="Order">
+      </div>
+
+      <!-- f2 -->
+
+      {% comment %} <div class="box">
+        <a href=""><ion-icon class="heart" name="heart"></ion-icon></a>
+        <a href=""><ion-icon class="eye" name="eye"></ion-icon></a>
+        <img src="images/f2.jpg" alt="">
+        <h3>food taste</h3>
+        <div class="star">
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star-half"></ion-icon></a>
+        </div>
+        <span>₹ 500.0</span><br>
+        <input type="submit" value="Order">
+      </div>
+      <!-- f3 -->
+
+
+      <div class="box">
+        <a href=""><ion-icon class="heart" name="heart"></ion-icon></a>
+        <a href=""><ion-icon class="eye" name="eye"></ion-icon></a>
+        <img src="images/f3.jpg" alt="">
+        <h3>food taste</h3>
+        <div class="star">
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star-half"></ion-icon></a>
+          <a href=""><ion-icon class="wh" name="star"></ion-icon></a>
+          <a href=""><ion-icon class="wh" name="star"></ion-icon></a>
+        </div>
+        <span>₹ 500.0</span><br>
+        <input type="submit" value="Order">
+      </div>
+
+      <!-- f4 -->
+
+      <div class="box">
+        <a href=""><ion-icon class="heart" name="heart"></ion-icon></a>
+        <a href=""><ion-icon class="eye" name="eye"></ion-icon></a>
+        <img src="images/f4.jpg" alt="">
+        <h3>food taste</h3>
+        <div class="star">
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star-half"></ion-icon></a>
+          <a href=""><ion-icon class="wh" name="star"></ion-icon></a>
+        </div>
+        <span>₹ 500.0</span><br>
+        <input type="submit" value="Order">
+      </div>
+
+      <!-- f5 -->
+
+
+      <div class="box">
+        <a href=""><ion-icon class="heart" name="heart"></ion-icon></a>
+        <a href=""><ion-icon class="eye" name="eye"></ion-icon></a>
+        <img src="images/f5.jpg" alt="">
+        <h3>food taste</h3>
+        <div class="star">
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star-half"></ion-icon></a>
+        </div>
+        <span>₹ 500.0</span><br>
+        <input type="submit" value="Order">
+      </div>
+
+      <!-- f6 -->
+
+      <div class="box">
+        <a href=""><ion-icon class="heart" name="heart"></ion-icon></a>
+        <a href=""><ion-icon class="eye" name="eye"></ion-icon></a>
+        <img src="images/f6.jpg" alt="">
+        <h3>food taste</h3>
+        <div class="star">
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star"></ion-icon></a>
+          <a href=""><ion-icon name="star-half"></ion-icon></a>
+        </div>
+        <span>₹ 500.0</span><br>
+        <input type="submit" value="Order">
+      </div> {% endcomment %}
+    </div>
+  </section>
+
+  {% endblock  %}

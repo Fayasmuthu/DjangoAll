@@ -1,0 +1,23 @@
+/* styles.css */
+
+/* Style for the box */
+.register-boxform {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Center the box */
+.boxform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+#login input{
+  border: solid green 1px;
+}
+  

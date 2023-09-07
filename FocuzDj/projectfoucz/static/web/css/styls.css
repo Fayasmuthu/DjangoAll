@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#Greenlight{
+    background-color: rgb(58, 97, 0);
+    border: none;
+    
+}
+#know{
+    background-color: rgba(0, 0, 0, 0.4);
+    border:1px solid white;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    padding: 5px;
+}
+.di{
+    font-weight: 600;
+    font-size: 30px;
+}
+.dii p{
+    font-size: 12px;
+    line-height: 5px;
+    
+  
+}
+h3{
+    font-size: 14px;
+    padding-top: 10px;
+}
+    
+
+
+@media (min-width:320px){
+    .dii p{
+        margin-left: 100px;
+        font-weight: 600;
+    }
+    #Greenlight{
+        min-width: 130px;
+    }
+    .di{
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:425px){
+    .dii p{
+        margin-left:150px;
+    }
+
+}
+@media (min-width:768px){
+    .dii p{
+        margin-left:1px;
+    }}
+    
+     
+ 

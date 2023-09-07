@@ -1,0 +1,130 @@
+
+
+.section1{
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.747));
+    z-index: -2;
+}
+
+
+
+.UWR{
+    text-align: center;
+    margin-top:100px;
+}
+
+.Un{
+    font-size: 100px;
+}
+.text-un{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+.abc span {
+    font-size: 150px;
+}
+.Watch{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Ready{
+    font-size: 20px;
+}
+.Emai{
+    margin-left: 400px;
+}
+.Ec{
+    background-color: rgba(0, 0,0,0.5);
+}
+
+.dow{
+    margin-top: -200px;
+    margin-left: 400PX;
+}
+
+.hr{
+    height: 10px;
+   
+    background-color: rgb(77, 77, 77);
+}
+
+.Get{
+    
+    justify-content: center;
+    
+}
+#Language{
+    width: 170px;
+}
+
+.enjoy{
+    height:75vh;
+}
+.enjoy6{
+    height:100vh;
+}
+.enjoy7{
+    height: 65vh;
+    color: rgb(143, 143, 143);
+}
+
+.navbar-brand img{
+    width: 130px;
+    height: 90px;
+}
+
+
+
+
+.black{
+    background: black;
+    color: grey     ;
+}
+
+@media(max-width:375px){
+    .email{
+        width: 400px;
+    }
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width:375px){
+    .input-group{
+    width: 500px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.btn{
+    margin-top: 5px;
+}
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

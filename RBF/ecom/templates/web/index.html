@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'web/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="grid-container">
+        <div class="A">
+        {% for p in prod %}
+        
+        <div class="hero">
+            <div class="hero1">
+            <div class="pic">
+            <img src="{{p.image.url}}" alt="new">
+            </div>
+            <h1 class="Name">{{p.name}}</h1>
+            <p class="price">{{p.price}}</p>
+            <button>Booked</button>
+        </div>
+        <div class="overlay">
+            <h6>{{p.name}}</h6>
+            <button>BOOK</button>
+        </div>
+    </div>
+        {% endfor %}
+    </div>
+    </section>
+
+</body>
+
+</html>
